@@ -16,11 +16,11 @@
 ### Установка:
 * Клонируйте репозиторий:
 
-  ``` git clone git@github.com:Glaser1/fjango-stripe/git ```
+  ``` git clone git@github.com:Glaser1/django-stripe/git ```
 * Установите docker согласно официальной инструкции (в зависимости от вашей операционной системы):
     https://docs.docker.com/engine/install/    
 
-* Создайте в корневой директории проекта файл .env - в нем укажите переменные окружающей среды согласно шаблону выше;
+* Создайте в корневой директории проекта файл .env - в нем укажите переменные среды согласно шаблону выше;
 
 * Создайте Docker образ:
   ``` docker build -t django-stripe <путь до Dockerfile> ```
@@ -41,7 +41,7 @@
   ``` python3 manage.py createsuperuser ```
 
 * Заполните базу данных базу данных:
-  ``` python3 manage.py loaddata fixtures.json```
+  ``` python3 manage.py loaddata fixtures.json ```
   
 ## Примеры запросов:
  - Перейти на страницу товара (GET-запрос):
