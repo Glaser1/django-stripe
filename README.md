@@ -16,7 +16,7 @@
 ### Установка:
 * Клонируйте репозиторий:
 
-  ``` git clone git@github.com:Glaser1/django-stripe/git ```
+  ``` git clone git@github.com:Glaser1/django-stripe.git ```
 * Установите docker согласно официальной инструкции (в зависимости от вашей операционной системы):
     https://docs.docker.com/engine/install/    
 
