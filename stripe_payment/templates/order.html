@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Заказ № {{ order.id }}</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://js.stripe.com/v3/"></script>
+  </head>
+  <body>
+    <section>
+      <div class="order">
+        <div class="items">
+          <h3>Товары</h3>
+            {% for item in order_items %}
+                <li> {{ item }} </li>
+            {% endfor %}
+        </div>
+      </div>
+      <form action="/order/pay/{{ order_id }}/" method="POST">
+       {% csrf_token %}
+        <button type="submit" id="checkout-button">Checkout</button>
+      </form>
+    </section>
+  </body>
+</html>
